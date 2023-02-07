@@ -20,7 +20,7 @@ on:
 
 jobs:
   check:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: z0al/dependent-issues@v1
         env:
@@ -41,7 +41,7 @@ jobs:
 
           # (Optional) A comma-separated list of keywords. Default
           # "depends on, blocked by"
-          keywords: depends on, depends, blocked by
+          keywords: depends on, requires, blocked by
 
           # (Optional) A custom comment body. It supports `{{ dependencies }}` token.
           comment: >
